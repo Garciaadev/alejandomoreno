@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Moreno García</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top shadow-sm"
+          style="background-color: rgba(33, 37, 41, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+          
+          <div class="container">
+            <!-- Branding -->
+            <div class="">
+              <a class="navbar-brand text-white fw-bold mb-0" href="#">Alejandro Moreno García</a>
+              <a class="navbar-brand text-primary fs-6 mt-0">Desarrollador Web</a>
+            </div>
+      
+            <!-- Botón hamburguesa para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Menú -->
+            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+              <ul class="navbar-nav align-items-lg-center">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#about">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#portfolio">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#contact">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+      
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold">Alejandro Moreno - Desarrollo web </h1>
+            <p class="lead">Estudiante comprometido con ganas de aportar en entornos reales</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3 rounded-4">Contáctame</a>
+        </div>
+    </section>    
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Sobre mí</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="img/sobremi.png" alt="Alejandro Moreno García" class="img-fluid" style="width: 550px; height: auto;">
+                </div>
+                <div class="col-lg-6">
+                    <h3>Hola, soy Alejandro</h3>
+                    <p>Soy estudiante de Desarrollo Web con especial interés en backend, bases de datos y programación en Python. Me considero una persona comprometida y con muchas ganas de seguir aprendiendo en entornos reales.</p>
+                    <p>Actualmente curso un Grado Superior en Desarrollo de Aplicaciones Web en Alicante, y he finalizado un curso online de Python en Tokio School. Estoy buscando una empresa donde realizar mis prácticas y seguir creciendo profesionalmente.</p>
+                    <div class="skills mt-4">
+                        <h4>Habilidades técnicas:</h4>
+                        <ul class="list-inline d-flex flex-wrap gap-2">
+                            <li class="list-inline-item badge python">Python</li>
+                            <li class="list-inline-item badge java">Java</li>
+                            <li class="list-inline-item badge html">HTML5</li>
+                            <li class="list-inline-item badge css">CSS3</li>
+                            <li class="list-inline-item badge bootstrap">Bootstrap</li>
+                            <li class="list-inline-item badge tailwind">Tailwind</li>
+                            <li class="list-inline-item badge material">Material Design</li>
+                            <li class="list-inline-item badge mysql">MySQL</li>
+                            <li class="list-inline-item badge git">Git</li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Portafolio</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card portfolio-item">
+                        <img src="assets/project1.jpg" class="card-img-top" alt="E-commerce">
+                        <div class="card-body">
+                            <h5 class="card-title">Tienda Online</h5>
+                            <p class="card-text">Plataforma de e-commerce con carrito de compras y pasarela de pago.</p>
+                            <div class="badges mb-2">
+                                <span class="badge bg-secondary">React</span>
+                                <span class="badge bg-secondary">Node.js</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card portfolio-item">
+                        <img src="assets/project2.jpg" class="card-img-top" alt="Blog">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Personal</h5>
+                            <p class="card-text">Blog minimalista con sistema de comentarios y búsqueda.</p>
+                            <div class="badges mb-2">
+                                <span class="badge bg-secondary">WordPress</span>
+                                <span class="badge bg-secondary">PHP</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card portfolio-item">
+                        <img src="assets/project3.jpg" class="card-img-top" alt="Dashboard">
+                        <div class="card-body">
+                            <h5 class="card-title">Panel de Administración</h5>
+                            <p class="card-text">Dashboard interactivo con gráficos y gestión de usuarios.</p>
+                            <div class="badges mb-2">
+                                <span class="badge bg-secondary">Vue.js</span>
+                                <span class="badge bg-secondary">Firebase</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projects 4-6 would follow same pattern -->
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Contact Section -->
+<section id="contact" class="bg-light reveal">
+    <div class="container">
+      <h2 class="text-center mb-5 text-dark">Contacto</h2>
+      <div class="row align-items-stretch">
+        
+        <!-- Formulario -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="p-4 bg-white shadow rounded-5 h-100">
+            <form 
+              action="https://formspree.io/f/meoargbw" 
+              method="POST" 
+              class="row g-3"
+            >
+              <div class="col-12">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+              </div>
+            </form>
+          </div>
+        </div>
+  
+        <!-- Info de contacto -->
+        <div class="col-lg-6">
+          <div class="h-100 d-flex flex-column justify-content-center">
+            <h4 class="text-primary">Información de contacto</h4>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-3"><i class="fas fa-envelope me-2 text-primary"></i> garciaadev@gmail.com</li>
+              <li class="mb-3"><i class="fas fa-phone me-2 text-primary"></i> +34 654 63 19 99</li>
+              <li class="mb-3"><i class="fas fa-map-marker-alt me-2 text-primary"></i> 03014 Alicante, España</li>
+            </ul>
+            <div class="social-links mt-4">
+              <a href="#" class="me-3 text-dark"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a href="#" class="me-3 text-dark"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+   
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 - Alejandro Moreno García</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scroll Reveal and Section Visibility JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show all sections immediately (remove opacity:0)
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.opacity = '1';
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    document.querySelector('.navbar').classList.add('scrolled');
+                } else {
+                    document.querySelector('.navbar').classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

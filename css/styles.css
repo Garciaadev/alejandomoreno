@@ -1,0 +1,223 @@
+/* Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    padding-top: 0;
+}
+
+/**/
+.navbar {
+    background-color: rgba(29, 29, 29, 0.815); /* fondo blanco translúcido */
+    backdrop-filter: blur(100px);
+}
+
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('/img/hero-bg.jpg');
+    color: white;
+}
+
+/* About Section */
+#about img {
+    max-width: 800px;
+}
+
+#about {
+    background-color: #f8f6f3;
+}
+
+.badge {
+    font-weight: 600;
+    color: white;
+    padding: 0.5em 0.8em;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+}
+.badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.badge.python { background-color: #3776AB; }
+.badge.java { background-color: #ED1D25; }
+.badge.html { background-color: #E44D26; }
+.badge.css { background-color: #264DE4; }
+.badge.bootstrap { background-color: #7952B3; }
+.badge.tailwind { background-color: #38BDF8; color: #000; }
+.badge.material { background-color: #4285F4; }
+.badge.mysql { background-color: #00758F; }
+.badge.git { background-color: #F1502F; }
+
+
+
+
+
+/* Portfolio Section */
+.portfolio-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Services Section */
+.service-card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Footer */
+footer {
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.05);
+}
+
+.social-links a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0d6efd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #about img {
+        margin-bottom: 30px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Section Spacing */
+section {
+    padding: 80px 0;
+    opacity: 0;
+}
+
+section.show {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Custom Colors */
+.bg-primary {
+    background-color: #8a2be2 !important;
+}
+
+.text-primary {
+    color: #8a2be2 !important;
+}
+
+.btn-primary {
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+}
+
+.btn-primary:hover {
+    background-color: #7a2be2;
+    border-color: #6a2be2;
+}
+
+/* Scroll Reveal Animation */
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/hero-bg.jpg'); /* Restored to original relative path */
+    background-attachment: fixed; /* Added to fix the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #7952B3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #614092;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
